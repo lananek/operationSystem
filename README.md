@@ -11,4 +11,7 @@
 
 <img src="https://user-images.githubusercontent.com/116422832/210076234-7085fb76-cf9c-42b2-a9a1-32ae480b9fc8.png" width="300" height="300"> 
 
+мы сидим тут уже третий час...
+
+<img src="https://user-images.githubusercontent.com/116422832/210091075-482b1a7a-08c7-4a75-9b7e-6104f7f684c6.png" width="300" height="300"> 
 
