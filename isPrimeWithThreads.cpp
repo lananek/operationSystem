@@ -5,9 +5,6 @@
 
 using namespace std;
 
-
-
-
 bool isPrime(int num) {
 	if (num == 0) 
 		return false;
