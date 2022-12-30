@@ -4,17 +4,13 @@
 #include <atomic>
 using namespace std;
 
-class Spinlock {
-private:
-	atomic<bool> lock;
-public:
-	Spinlock() : lock(false) {}
+public class Spinlock {
+    AtomicBoolean state = new AtomicBoolean(false);
 
-	void Lock() {
-		while (lock.exchange(true));
-	}
-
-	void Unlock() {
-		lock.store(false);
-	}
-};
+    public void lock() {
+   	 while (state.getAndSet(true)) {}
+    }
+    public void unlock() {
+   	 state.set(false);
+    }
+}
