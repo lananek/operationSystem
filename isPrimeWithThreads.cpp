@@ -5,11 +5,7 @@
 
 using namespace std;
 
-vector<int> vec;
-vector<bool> boolPrime;
-mutex mutex_;
-int j = 0;
-int i = 0;
+
 
 
 bool isPrime(int num) {
@@ -20,6 +16,12 @@ bool isPrime(int num) {
 	}
 	return true;
 }
+
+vector<int> vec;
+vector<bool> boolPrime;
+mutex mutex_;
+int j = 0;
+int i = 0;
 
 void primeVec() {
 
