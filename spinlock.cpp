@@ -7,7 +7,7 @@ class Spinlock {
      atomic <bool> state;
     Spinlock() : lock(false) {}
     void lock() {
-   	    while (state.exchange((true)) {}
+   	    while (state.exchange(true)) {}
     }
     public void unlock() {
    	    state.store(false);
