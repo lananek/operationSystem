@@ -1,16 +1,15 @@
-#include <iostream>
-#include <vector>
+
 #include <thread>
 #include <atomic>
 using namespace std;
 
-public class Spinlock {
-    AtomicBoolean state = new AtomicBoolean(false);
-
-    public void lock() {
-   	 while (state.getAndSet(true)) {}
+class Spinlock {
+     atomic <bool> state;
+    Spinlock() : lock(false) {}
+    void lock() {
+   	    while (state.exchange((true)) {}
     }
     public void unlock() {
-   	 state.set(false);
+   	    state.store(false);
     }
 }
